@@ -18,38 +18,30 @@ class Pet:
         self.energy -= 15
         return self
 class ola:
-
-    def __init__(self, first_name, last_name , treats, pet_food, pet):
+    def __init__(self, first_name, last_name , treats, comida_perro, pet):
         self.first_name = first_name
         self.last_name = last_name
         self.treats = treats
-        self.pet_food = pet_food
+        self.pet_food = comida_perro
         self.pet = pet
-
-    
     def caminar(self):
         self.pet.jugar()
         return self
+    def dar_comida(self):
 
-    def feed(self):
-
-        if len(self.pet_food) > 0:
-            food = self.pet_food.pop()
-            print(f"Feeding {self.pet.name} {food}!")
+        if len(self.dar_comida) > 0:
+            food = self.dar_comida.pop()
+            print(f"Feeding {self.pet.name} {comida}!")
             self.pet.comer()
         else:
-            print("Oh no!!! you need more pet food!")
+            print("Nececita mas comida!")
         return self
-    
-    def bathe(self):
-        self.pet.noise()
 
-my_treats = ['Snausage','Bacon',"Trash Bag"]
-my_pet_food = ['Pizza','Burger']
+comida = ['pan','comida']
 
-nibbles = Pet("Mr. Nibbles","Horse",['nibbles on things','is invisible'],"Hey Hey")
+nibbles = Pet("capi")
 
-elian = ola("elian","Dion",my_treats,my_pet_food, nibbles)
+elian = ola("elian",comida, )
 
 elian.feed();
 elian.feed();
